@@ -38,7 +38,7 @@ for s in stock:
             stock_data['30_days_moving_avg'].fillna(method='bfill', inplace=True)
 
             # Save the data in a csv file
-            stock_data.to_csv(f'{s}_stock_data.csv')
+            stock_data.to_csv(f'{s}_23020241054_KanishkaDwivedi.csv')
 
             # Generate candlestick chart for the stock
             mpf.plot(stock_data, type='candle', volume=True, style='charles', title=s)
